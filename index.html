@@ -75,7 +75,7 @@
                 axios.get('http://dummy.restapiexample.com/api/v1/employees'
                 ).then(response => {
                     this.emplist = response.data.data;
-                }).catch(err => alert("Too Many Requests - Try again in a few minutes"));
+                }).catch(err => alert("Too Many Requests or CORS errors\n\nTry again in a few minutes"));
             },
             
             searchData() {
